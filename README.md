@@ -14,7 +14,7 @@ Using Tableau and the Global Superstore dataset, I developed an interactive dash
 
 ## Dataset and Tools
 
-**Dataset:** Global Superstore, filtered to the Binders sub-category.
+**Dataset:** Global Superstore, filtered to the Binders sub-category.Data Source: Kaggle (publicly accessible practice dataset). The exact dataset URL and redistribution license have not yet been verified.
 
 **Tool:** Tableau Public.
 
@@ -64,4 +64,4 @@ Further analysis at the order and product levels would help identify whether spe
 ## Project Files
 
 - `binders_dashboard_v2.png` — Dashboard screenshot
-- `Global_Superstore_Binders_Portfolio.twbx` — Tableau packaged workbook
+- Tableau packaged workbook — Not publicly distributed pending dataset license verification.
