@@ -22,6 +22,12 @@ Using Tableau and the Global Superstore dataset, I developed an interactive dash
 
 ## Methodology
 
+### Average Discount Calculation
+
+Average Discount was calculated as the arithmetic mean of the `Discount` field across Binders transaction-level records within each market. This measure is based on the original row-level data rather than an average of order-level discount rates.
+
+Consequently, Average Discount and Loss-making Order Rate are calculated at different levels of granularity: transaction-level records and distinct orders, respectively. These measures are compared descriptively across markets.
+  
 To avoid confusing loss-making transaction rows with loss-making orders, I calculated total profit at the market-order level using a FIXED LOD expression:
 
 `{ FIXED [Market], [Order ID] : SUM([Profit]) }`
@@ -50,6 +56,8 @@ Across the four markets, higher average discounts coincided with higher loss-mak
 This analysis is descriptive and does not establish causation. The market-level comparison includes only four observations, limiting the strength of statistical conclusions.
 
 Other factors, including product mix, shipping costs, pricing strategies, and market conditions, may also influence profitability.
+
+The scatter plot and fitted linear trend are based on only four market-level observations (n = 4). R² describes how closely the fitted line matches these four observations, but a high R² alone does not establish a reliable relationship or causation. The p-value, if calculated, should also be interpreted cautiously because the sample is extremely small and statistical inference depends on model assumptions. These findings should therefore be treated as exploratory rather than conclusive.
 
 ## Business Implications
 
