@@ -49,6 +49,15 @@ An order was classified as loss-making when its aggregated profit was negative.
 
 I then compared loss order rates with average discount rates across markets.
 
+
+### Interactive Metric Selector
+
+I developed a parameter-driven metric selector in Tableau that allows users to switch between **Average Discount** and **Loss-making Order Rate** across markets.
+
+The selector uses a CASE calculation to display the selected metric dynamically. The loss-making order rate is based on distinct Binders orders and order-level profitability, while average discount is calculated at the transaction-record level.
+
+This interactive feature enables users to compare discounting patterns and profitability outcomes without switching between separate worksheets.
+  
 ## Key Findings
 
 | Market | Average Discount | Loss Order Rate |
