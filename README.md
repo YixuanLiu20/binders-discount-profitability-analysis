@@ -30,7 +30,18 @@ Consequently, Average Discount and Loss-making Order Rate are calculated at diff
   
 To avoid confusing loss-making transaction rows with loss-making orders, I calculated total profit at the market-order level using a FIXED LOD expression:
 
-`{ FIXED [Market], [Order ID] : SUM([Profit]) }`
+
+```tableau
+{ FIXED [Market], [Order ID] :
+    SUM(
+        IF [Sub-Category] = "Binders"
+        THEN [Profit]
+        ELSE 0
+        END
+    )
+}
+```
+  
 
 An order was classified as loss-making when its aggregated profit was negative.
 
