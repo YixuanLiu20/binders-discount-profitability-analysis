@@ -101,6 +101,7 @@ Further analysis at the order and product levels would help identify whether spe
 ## Dashboard
 
 ![Binders Discount & Profitability Dashboard](binders_dashboard_v2.png)
+![Order-Level Outlier Sensitivity Dashboard](outlier_sensitivity_dashboard.png)
 
 ## Project Files
 
