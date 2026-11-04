@@ -71,6 +71,19 @@ The US market had both the highest average discount rate and the highest proport
 
 Across the four markets, higher average discounts coincided with higher loss-making order rates.
 
+## Order-Level Analysis and Outlier Sensitivity
+
+To examine the relationship between discounting and profitability at the order level, I compared linear regression results before and after excluding an extreme loss-making order.
+
+- **Full sample:** R² = 0.0450, p = 0.0002614
+- **Without the extreme outlier:** R² = 0.1443, p < 0.0001
+
+Removing the extreme observation improved the model fit, but discount alone still explained a limited proportion of order-level profit variation.
+
+These findings demonstrate the importance of examining outliers and aggregation levels when interpreting business data. The observed associations do not establish causation.
+
+![Order-Level Outlier Sensitivity Dashboard](outlier_sensitivity_dashboard.png)
+
 ## Limitations
 
 This analysis is descriptive and does not establish causation. The market-level comparison includes only four observations, limiting the strength of statistical conclusions.
