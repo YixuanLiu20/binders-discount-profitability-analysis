@@ -98,6 +98,34 @@ The findings suggest that markets with relatively high discount rates, particula
 
 Further analysis at the order and product levels would help identify whether specific discount patterns are associated with losses.
 
+## Additional Analysis: LATAM Binders — Order-Level Regression
+
+### Research Question
+
+Is there a negative relationship between discount and profit for Binders in the LATAM market?
+
+### Methodology
+
+A linear regression analysis was conducted at the order level using 70 observations, with discount as the independent variable and profit as the dependent variable.
+
+### Key Findings
+
+- Sample size: 70
+- Regression slope: -80.925
+- R²: 0.3529
+- p-value: < 0.0001
+
+The results indicate a statistically significant negative association between discount and profit. The regression model explains approximately 35.29% of the observed variation in profit.
+
+### Business Implications
+
+Higher discounts are associated with lower profit. The company should evaluate its discount strategies for Binders in the LATAM market.
+
+### Limitations
+
+The regression results demonstrate an association rather than causation. Direct comparisons with market-level regression results should be made cautiously because the analytical granularity, geographic scope, and dependent variables differ.
+
+
 ## Dashboard
 
 ![Binders Discount & Profitability Dashboard](binders_dashboard_v2.png)
